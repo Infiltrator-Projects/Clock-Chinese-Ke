@@ -49,6 +49,6 @@ Each package owns only this provider and its passive documentation. Its `Replace
 ## Installed two-file documentation
 
 This provider installs only its clock .so and its illustrated PDF under
-/System/Resources/Clocks/ and /System/Resources/Documentation/Clock-Chinese-Ke/.
+/System/Resources/Clocks/ and /System/Resources/Documentation/Clock-Chinese-Ke.pdf.
 Engineering documents remain in GitHub. Build evidence is stored in Debian
 control metadata rather than installed BUILD-INFO.
