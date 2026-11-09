@@ -6,8 +6,6 @@
 #include <stdio.h>
 #include <string.h>
 
-#define DAY_US INT64_C(86400000000)
-#define SECOND_US INT64_C(1000000)
 #define KE_US INT64_C(864000000)
 
 static const char *ke_label(const char *language)
