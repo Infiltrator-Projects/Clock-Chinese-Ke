@@ -1,0 +1,14 @@
+{
+  "title": "Traditional Chinese Hundred-Ke Clock",
+  "intro": "This clock divides the local civil day into exactly one hundred equal ke, a traditional Chinese time division.",
+  "structure": "One ke is 1/100 of a nominal 24-hour day: 864 ordinary seconds, or 14 minutes 24 seconds. The display counts completed units from 00 to 99 and rolls over at local midnight.",
+  "example": "Midnight is 00 ke, 06:00 is 25 ke, noon is 50 ke and 18:00 is 75 ke. At 00:14:24 the reading advances from 00 to 01.",
+  "history": "The hundred-ke division is a historical Chinese convention associated with systems such as water clocks. Other periods employed differing counts, including 96-ke schemes; they are not interchangeable with this model.",
+  "model": "The provider floor-divides the positive local civil microsecond phase by 864000000. It displays two decimal digits with a localised unit label (Chinese/Japanese character, Russian form, or romanised ke). Next-update delay is the remaining microseconds before the next ke boundary, rounded up to milliseconds.",
+  "limits": "This is a Han-era-style mathematical projection using modern supplied civil offset, not a reconstruction of every historical time system or an observed water-clock rate. The seconds toggle does not add finer units; location coordinates are not needed.",
+  "sources": [
+    "Implementation: https://github.com/Infiltrator-Projects/Clock-Chinese-Ke/blob/main/src/provider.c",
+    "Model evidence: https://github.com/Infiltrator-Projects/Clock-Chinese-Ke/blob/main/docs/MODEL.md",
+    "Shared contract: https://github.com/Infiltrator-Projects/Libraries/blob/main/docs/TEMPORAL_PROVIDERS.md"
+  ]
+}
